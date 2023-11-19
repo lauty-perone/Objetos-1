@@ -1,0 +1,5 @@
+INDEX VERSION 1.131+C:\Users\lauty\Desktop\Escritorio\INFORMATICA\RedictadoOO1\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+3113056628.index
+2634963276.index
+4165667203.index

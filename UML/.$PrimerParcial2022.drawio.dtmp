@@ -1,0 +1,109 @@
+<mxfile host="Electron" modified="2023-06-11T22:05:40.122Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.2.8 Chrome/112.0.5615.165 Electron/24.2.0 Safari/537.36" etag="JeR1nyd6LQ4LycsMMWot" version="21.2.8" type="device">
+  <diagram name="Página-1" id="XrtBrJfVJ0c0OtSioTed">
+    <mxGraphModel dx="1628" dy="1680" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="6xs-g2FxqtOX_Xcu-HcD-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="6xs-g2FxqtOX_Xcu-HcD-1" target="6xs-g2FxqtOX_Xcu-HcD-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6xs-g2FxqtOX_Xcu-HcD-1" value="Contribuyente" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="285" y="-220" width="310" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="6xs-g2FxqtOX_Xcu-HcD-2" value="- nombre:String&lt;br&gt;- dni: Integer&lt;br&gt;- email: String&lt;br&gt;- localidad: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="6xs-g2FxqtOX_Xcu-HcD-1">
+          <mxGeometry y="26" width="310" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="6xs-g2FxqtOX_Xcu-HcD-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="6xs-g2FxqtOX_Xcu-HcD-1">
+          <mxGeometry y="90" width="310" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="6xs-g2FxqtOX_Xcu-HcD-4" value="+&amp;lt;&amp;lt;create&amp;gt;&amp;gt; Contribuyente(nombre:String, dni:Integer, email:String, localidad:String): Contribuyente&lt;br&gt;+ agregarInmueble(inmueble Inmueble)&lt;br&gt;+agrearAutomotor(automotor Automotor)&lt;br&gt;+ agregarEmbarcacion(embarcacion Embarcacion)&lt;br&gt;+ calcularTotalImpuesto(): Real" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="6xs-g2FxqtOX_Xcu-HcD-1">
+          <mxGeometry y="98" width="310" height="102" as="geometry" />
+        </mxCell>
+        <mxCell id="6xs-g2FxqtOX_Xcu-HcD-38" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=block;endFill=0;" edge="1" parent="1" source="6xs-g2FxqtOX_Xcu-HcD-5" target="6xs-g2FxqtOX_Xcu-HcD-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6xs-g2FxqtOX_Xcu-HcD-5" value="Inmueble" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-50" y="240" width="270" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="6xs-g2FxqtOX_Xcu-HcD-6" value="- numPartida: Integer&lt;br&gt;- valorlLote: Real&lt;br&gt;- valorEdificacion: Real&lt;br&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="6xs-g2FxqtOX_Xcu-HcD-5">
+          <mxGeometry y="26" width="270" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="6xs-g2FxqtOX_Xcu-HcD-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="6xs-g2FxqtOX_Xcu-HcD-5">
+          <mxGeometry y="80" width="270" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="6xs-g2FxqtOX_Xcu-HcD-8" value="+&amp;lt;&amp;lt;create&amp;gt;&amp;gt; Inmueble(numPartida: Integer, valorLote:Real, valorEdificacion: Real): Inmueble&lt;br&gt;+calcularImpuesto():Real" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="6xs-g2FxqtOX_Xcu-HcD-5">
+          <mxGeometry y="88" width="270" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="6xs-g2FxqtOX_Xcu-HcD-25" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;" edge="1" parent="1" source="6xs-g2FxqtOX_Xcu-HcD-9" target="6xs-g2FxqtOX_Xcu-HcD-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6xs-g2FxqtOX_Xcu-HcD-9" value="Automotor" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="360" width="230" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="6xs-g2FxqtOX_Xcu-HcD-10" value="- marca:String&lt;br&gt;- modelo: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="6xs-g2FxqtOX_Xcu-HcD-9">
+          <mxGeometry y="26" width="230" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="6xs-g2FxqtOX_Xcu-HcD-11" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="6xs-g2FxqtOX_Xcu-HcD-9">
+          <mxGeometry y="60" width="230" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="6xs-g2FxqtOX_Xcu-HcD-12" value="+&amp;lt;&amp;lt;create&amp;gt;&amp;gt;Automotor(patente:String, fechaFabricacion: Date,valor:Real, marca:String, modelo:String):Automotor&lt;br&gt;+calcularCosto():Real" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="6xs-g2FxqtOX_Xcu-HcD-9">
+          <mxGeometry y="68" width="230" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="6xs-g2FxqtOX_Xcu-HcD-26" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;" edge="1" parent="1" source="6xs-g2FxqtOX_Xcu-HcD-13" target="6xs-g2FxqtOX_Xcu-HcD-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6xs-g2FxqtOX_Xcu-HcD-13" value="Embarcacion" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="610" y="340" width="240" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="6xs-g2FxqtOX_Xcu-HcD-14" value="- nombre:String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="6xs-g2FxqtOX_Xcu-HcD-13">
+          <mxGeometry y="26" width="240" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="6xs-g2FxqtOX_Xcu-HcD-15" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="6xs-g2FxqtOX_Xcu-HcD-13">
+          <mxGeometry y="52" width="240" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="6xs-g2FxqtOX_Xcu-HcD-16" value="+&amp;lt;&amp;lt;create&amp;gt;&amp;gt;Embarcacion(patente:String, fechaFabricacion: Date, valor:Real, nombre:String): Embarcacion&lt;br&gt;+calcularCosto(): Real" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="6xs-g2FxqtOX_Xcu-HcD-13">
+          <mxGeometry y="60" width="240" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="6xs-g2FxqtOX_Xcu-HcD-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="6xs-g2FxqtOX_Xcu-HcD-17" target="6xs-g2FxqtOX_Xcu-HcD-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6xs-g2FxqtOX_Xcu-HcD-17" value="Sistema" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-310" y="-170" width="430" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="6xs-g2FxqtOX_Xcu-HcD-19" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="6xs-g2FxqtOX_Xcu-HcD-17">
+          <mxGeometry y="26" width="430" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="6xs-g2FxqtOX_Xcu-HcD-20" value="+ &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Sistema(): Sistema&lt;br&gt;+ agregarContribuyente(contribuyente: Contribuyente)&lt;br&gt;+ contribuyentesQueMasPagan(localidad: String, N: Integer): Contribuyente[*]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="6xs-g2FxqtOX_Xcu-HcD-17">
+          <mxGeometry y="34" width="430" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="6xs-g2FxqtOX_Xcu-HcD-39" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=block;endFill=0;" edge="1" parent="1" source="6xs-g2FxqtOX_Xcu-HcD-21" target="6xs-g2FxqtOX_Xcu-HcD-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6xs-g2FxqtOX_Xcu-HcD-21" value="&amp;lt;&amp;lt;abstract&amp;gt;&amp;gt;&lt;br&gt;Vehiculo" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="150" width="220" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="6xs-g2FxqtOX_Xcu-HcD-22" value="- patente: String&lt;br&gt;- fechaFabricacion: Date&lt;br&gt;- valor:Real" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="6xs-g2FxqtOX_Xcu-HcD-21">
+          <mxGeometry y="40" width="220" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="6xs-g2FxqtOX_Xcu-HcD-23" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="6xs-g2FxqtOX_Xcu-HcD-21">
+          <mxGeometry y="90" width="220" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="6xs-g2FxqtOX_Xcu-HcD-24" value="- supera10Años():Boolean&lt;br&gt;+ calcularImpuesto():Real&lt;br&gt;+&amp;lt;&amp;lt;abstract&amp;gt;&amp;gt; calcularCosto(): Real" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="6xs-g2FxqtOX_Xcu-HcD-21">
+          <mxGeometry y="98" width="220" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="6xs-g2FxqtOX_Xcu-HcD-30" value="0..*&lt;br&gt;-contribuyentes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="140" y="-120" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6xs-g2FxqtOX_Xcu-HcD-31" value="&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;br&gt;Bien" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="50" width="160" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="6xs-g2FxqtOX_Xcu-HcD-34" value="+calcularImpuesto(): Real" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="6xs-g2FxqtOX_Xcu-HcD-31">
+          <mxGeometry y="40" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="6xs-g2FxqtOX_Xcu-HcD-37" value="0..*&lt;br&gt;-bienes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="430" y="-10" width="60" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

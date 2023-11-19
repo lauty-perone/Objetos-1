@@ -1,0 +1,100 @@
+<mxfile host="Electron" modified="2023-06-26T21:23:44.787Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.5.0 Chrome/112.0.5615.204 Electron/24.5.1 Safari/537.36" etag="qwy8J6roH-Zi-KE6kzCX" version="21.5.0" type="device">
+  <diagram name="Página-1" id="mlmi7UfRwgSo01Ucy_nZ">
+    <mxGraphModel dx="801" dy="511" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Z5KG1NS2jDZ5b-GHxfdR-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Z5KG1NS2jDZ5b-GHxfdR-1" target="Z5KG1NS2jDZ5b-GHxfdR-11" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z5KG1NS2jDZ5b-GHxfdR-1" value="Usuario" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="150" y="270" width="430" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Z5KG1NS2jDZ5b-GHxfdR-2" value="- nombre: String&lt;br&gt;- direccion: String&lt;br&gt;- dni: Integer" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Z5KG1NS2jDZ5b-GHxfdR-1" vertex="1">
+          <mxGeometry y="26" width="430" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="Z5KG1NS2jDZ5b-GHxfdR-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="Z5KG1NS2jDZ5b-GHxfdR-1" vertex="1">
+          <mxGeometry y="80" width="430" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Z5KG1NS2jDZ5b-GHxfdR-4" value="+ &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Usuario(nombre: String, direccion: String, dni: Integer): Usuario&lt;br&gt;+ crearPropiedad(nombre: String, descripcion: String, precioPorNoche: Real, direccion: String): Propiedad&lt;br&gt;+ calcularIngreso(from: Date, to: Date): Real" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Z5KG1NS2jDZ5b-GHxfdR-1" vertex="1">
+          <mxGeometry y="88" width="430" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="Z5KG1NS2jDZ5b-GHxfdR-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Z5KG1NS2jDZ5b-GHxfdR-5" target="Z5KG1NS2jDZ5b-GHxfdR-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z5KG1NS2jDZ5b-GHxfdR-5" value="OOBnB" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="165" y="60" width="400" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Z5KG1NS2jDZ5b-GHxfdR-6" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Z5KG1NS2jDZ5b-GHxfdR-5" vertex="1">
+          <mxGeometry y="26" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Z5KG1NS2jDZ5b-GHxfdR-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="Z5KG1NS2jDZ5b-GHxfdR-5" vertex="1">
+          <mxGeometry y="52" width="400" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Z5KG1NS2jDZ5b-GHxfdR-8" value="+ agregarUsuario(nombre: String, direccion: String, dni: Integer): Usuario&lt;br&gt;+ obtenerReservasUsuario(usuario: Usuario): Reserva[*]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Z5KG1NS2jDZ5b-GHxfdR-5" vertex="1">
+          <mxGeometry y="60" width="400" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Z5KG1NS2jDZ5b-GHxfdR-10" value="0..*&lt;br&gt;- usuarios" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="360" y="200" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Z5KG1NS2jDZ5b-GHxfdR-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" parent="1" source="Z5KG1NS2jDZ5b-GHxfdR-11" target="Z5KG1NS2jDZ5b-GHxfdR-15" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z5KG1NS2jDZ5b-GHxfdR-11" value="Propiedad" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="200" y="495" width="330" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="Z5KG1NS2jDZ5b-GHxfdR-12" value="- nombre: String&lt;br&gt;- descripcion: String&lt;br&gt;- precioPorNoche: Real&lt;br&gt;- direccion: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Z5KG1NS2jDZ5b-GHxfdR-11" vertex="1">
+          <mxGeometry y="26" width="330" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="Z5KG1NS2jDZ5b-GHxfdR-13" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="Z5KG1NS2jDZ5b-GHxfdR-11" vertex="1">
+          <mxGeometry y="90" width="330" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Z5KG1NS2jDZ5b-GHxfdR-14" value="+ &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Propiedad(nombre: String, descripcion: String, precioPorNoche: Real, direccion: String): Propiedad&lt;br&gt;+ crearReserva(propiedad: Propiedad, periodo: DateLapse, inquilino: Usuario): Reserva&lt;br&gt;+ calcularIngresoPropiedad(): Real&lt;br&gt;+ propiedadDisponible(from: Date, to: Date): Boolean&lt;br&gt;+ eliminarReserva(reserva: Reserva)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Z5KG1NS2jDZ5b-GHxfdR-11" vertex="1">
+          <mxGeometry y="98" width="330" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="Z5KG1NS2jDZ5b-GHxfdR-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Z5KG1NS2jDZ5b-GHxfdR-15" target="Z5KG1NS2jDZ5b-GHxfdR-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z5KG1NS2jDZ5b-GHxfdR-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Z5KG1NS2jDZ5b-GHxfdR-15" target="Z5KG1NS2jDZ5b-GHxfdR-28" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z5KG1NS2jDZ5b-GHxfdR-15" value="Reserva" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="740" y="558" width="280" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="Z5KG1NS2jDZ5b-GHxfdR-17" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="Z5KG1NS2jDZ5b-GHxfdR-15" vertex="1">
+          <mxGeometry y="26" width="280" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Z5KG1NS2jDZ5b-GHxfdR-18" value="+ &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Reserva(propiedad: Propiedad, periodo: DateLapse, inquilino: Usuario): Reserva&lt;br&gt;+ calcularPrecioReserva(): Real&lt;br&gt;+ eliminarReserva" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Z5KG1NS2jDZ5b-GHxfdR-15" vertex="1">
+          <mxGeometry y="34" width="280" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Z5KG1NS2jDZ5b-GHxfdR-23" value="1&lt;br&gt;- inquilino" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="590" y="280" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Z5KG1NS2jDZ5b-GHxfdR-25" value="0..*&lt;br&gt;- reservas" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="660" y="565" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Z5KG1NS2jDZ5b-GHxfdR-26" value="0..*&lt;br&gt;- propiedades" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="360" y="440" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Z5KG1NS2jDZ5b-GHxfdR-27" value="1&lt;br&gt;- propiedad" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="530" y="565" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Z5KG1NS2jDZ5b-GHxfdR-28" value="DateLapse" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="720" y="705" width="320" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="Z5KG1NS2jDZ5b-GHxfdR-29" value="- from: Date&lt;br&gt;- to: Date" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Z5KG1NS2jDZ5b-GHxfdR-28" vertex="1">
+          <mxGeometry y="26" width="320" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="Z5KG1NS2jDZ5b-GHxfdR-30" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="Z5KG1NS2jDZ5b-GHxfdR-28" vertex="1">
+          <mxGeometry y="60" width="320" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Z5KG1NS2jDZ5b-GHxfdR-31" value="+&amp;lt;&amp;lt;create&amp;gt;&amp;gt; DateLapse(from: Date, to: Date): DateLapse&lt;br&gt;+ sizeInDays(): Integer&lt;br&gt;+ includesDate(other: Date): Boolean&lt;br&gt;+ overlaps(anotherDateLapse: DateLapse): Boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Z5KG1NS2jDZ5b-GHxfdR-28" vertex="1">
+          <mxGeometry y="68" width="320" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="Z5KG1NS2jDZ5b-GHxfdR-33" value="1&lt;br&gt;- periodo" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="880" y="653" width="70" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

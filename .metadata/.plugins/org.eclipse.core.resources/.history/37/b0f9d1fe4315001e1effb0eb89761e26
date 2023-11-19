@@ -1,0 +1,25 @@
+package ar.edu.unlp.info.oo1.ParcialPrimer2023;
+
+import java.time.LocalDate;
+
+public class Reserva {
+	
+	private DateLapse rango;
+	private double precioFinal;
+	private Usuario inquilino;
+	
+	public Reserva(DateLapse rango, double precioFinal, Usuario inquilino) {
+		this.rango = rango;
+		this.precioFinal = precioFinal;
+		this.inquilino = inquilino;
+	}
+	
+	public boolean disponible(LocalDate from, LocalDate to) {
+		DateLapse rangoNueva = new DateLapse(from, to);
+		if (!rango.overlaps(rangoNueva))
+			return true;
+		return true;
+	}
+	
+	
+}

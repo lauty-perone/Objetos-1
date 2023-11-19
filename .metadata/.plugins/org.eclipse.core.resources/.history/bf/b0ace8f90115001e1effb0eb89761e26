@@ -1,0 +1,21 @@
+package ar.edu.unlp.info.oo1.ParcialSegundoRecup2022;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Sistema {
+	
+	private List<Cliente> clientes;
+	
+	public Sistema() {
+		this.clientes = new ArrayList<Cliente>();
+	}
+	
+	public Cliente agregarCliente(String nombre, String direccion) {
+		Cliente cliente = new Cliente(nombre, direccion);
+		if (this.clientes.contains(cliente))
+			return null;
+		this.clientes.add(cliente);
+		return cliente;
+	}
+}

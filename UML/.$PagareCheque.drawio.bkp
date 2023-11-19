@@ -1,0 +1,64 @@
+<mxfile host="Electron" modified="2023-06-11T20:13:37.449Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.2.8 Chrome/112.0.5615.165 Electron/24.2.0 Safari/537.36" etag="xZ6uaCFbTCYmM2ZWC0qk" version="21.2.8" type="device">
+  <diagram name="Página-1" id="DM2K96fuzyI9t6opEDSB">
+    <mxGraphModel dx="801" dy="511" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ef03ghcQV_yCW1GxrdtR-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ef03ghcQV_yCW1GxrdtR-1" target="ef03ghcQV_yCW1GxrdtR-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ef03ghcQV_yCW1GxrdtR-1" value="Sistema" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="107" width="210" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ef03ghcQV_yCW1GxrdtR-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="ef03ghcQV_yCW1GxrdtR-1">
+          <mxGeometry y="26" width="210" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="ef03ghcQV_yCW1GxrdtR-4" value="+ &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Sistema(): Sistema&lt;br&gt;+ valorLiquido(): Real&lt;br&gt;+ agregarPagare(pagare: Pagare)&lt;br&gt;+ agregarCheque(cheque Cheque)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="ef03ghcQV_yCW1GxrdtR-1">
+          <mxGeometry y="34" width="210" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="ef03ghcQV_yCW1GxrdtR-5" value="&amp;lt;&amp;lt;abstract&amp;gt;&amp;gt;&lt;br&gt;Pago" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="77" width="220" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="ef03ghcQV_yCW1GxrdtR-6" value="- vencido: Boolean&lt;br&gt;-monto: Real&lt;br&gt;- destinatario: String&lt;br&gt;-originante: String&lt;br&gt;- fechaEmision: Date&lt;br&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="ef03ghcQV_yCW1GxrdtR-5">
+          <mxGeometry y="40" width="220" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ef03ghcQV_yCW1GxrdtR-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="ef03ghcQV_yCW1GxrdtR-5">
+          <mxGeometry y="120" width="220" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="ef03ghcQV_yCW1GxrdtR-8" value="+ &amp;lt;&amp;lt;abstract&amp;gt;&amp;gt; estaVencido():Boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="ef03ghcQV_yCW1GxrdtR-5">
+          <mxGeometry y="128" width="220" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="ef03ghcQV_yCW1GxrdtR-17" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ef03ghcQV_yCW1GxrdtR-9" target="ef03ghcQV_yCW1GxrdtR-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ef03ghcQV_yCW1GxrdtR-9" value="Pagare" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="194" y="300" width="220" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="ef03ghcQV_yCW1GxrdtR-10" value="- fechaVencimiento: Date" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="ef03ghcQV_yCW1GxrdtR-9">
+          <mxGeometry y="26" width="220" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ef03ghcQV_yCW1GxrdtR-11" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="ef03ghcQV_yCW1GxrdtR-9">
+          <mxGeometry y="52" width="220" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="ef03ghcQV_yCW1GxrdtR-12" value="+&amp;lt;&amp;lt;create&amp;gt;&amp;gt; Pagare(vencido:Boolean, monto: Real, destinatario: String, originante: String, fechaEmision: Date, fechaVencimiento:Date): Pagare&lt;br&gt;+ estaVencido(): Boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="ef03ghcQV_yCW1GxrdtR-9">
+          <mxGeometry y="60" width="220" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ef03ghcQV_yCW1GxrdtR-18" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ef03ghcQV_yCW1GxrdtR-13" target="ef03ghcQV_yCW1GxrdtR-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ef03ghcQV_yCW1GxrdtR-13" value="Cheque" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="300" width="190" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="ef03ghcQV_yCW1GxrdtR-15" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="ef03ghcQV_yCW1GxrdtR-13">
+          <mxGeometry y="26" width="190" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="ef03ghcQV_yCW1GxrdtR-16" value="+&amp;lt;&amp;lt;create&amp;gt;&amp;gt; Pagare(vencido:Boolean, monto: Real, destinatario: String, originante: String, fechaEmision: Date):Cheque&lt;br&gt;+ estaVencido(): Boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="ef03ghcQV_yCW1GxrdtR-13">
+          <mxGeometry y="34" width="190" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="ef03ghcQV_yCW1GxrdtR-20" value="0..*&lt;br&gt;-pagos" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="260" y="117" width="60" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

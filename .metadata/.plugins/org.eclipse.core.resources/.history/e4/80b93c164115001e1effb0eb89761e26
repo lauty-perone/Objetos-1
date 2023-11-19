@@ -1,0 +1,21 @@
+package ar.edu.unlp.info.oo1.ParcialPrimer2023;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Usuario {
+	
+	private int dni;
+	private List<Propiedad> propiedades;
+	
+	public Usuario(int dni) {
+		this.dni = dni;
+		this.propiedades = new ArrayList<Propiedad>();
+	}
+	
+	public Propiedad agregarPropiedad(double precioNoche, String nombre, String direccion) {
+		Propiedad p = new Propiedad(precioNoche, nombre, direccion);
+		this.propiedades.add(p);
+		return p;
+	}
+}

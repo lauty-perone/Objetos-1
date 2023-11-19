@@ -1,0 +1,23 @@
+package ar.edu.unlp.info.oo1.ParcialPrimer2023;
+
+import java.time.LocalDate;
+
+public abstract class Regla {
+	
+	private int porcentaje;
+	
+	public Regla(int porcentaje) {
+		this.porcentaje = porcentaje;
+	}
+	
+	public double getPorcentaje() {
+		return this.porcentaje / 100;
+	}
+
+	public boolean esUnica() {
+		return false;
+	}
+	
+	public abstract int prioridad();
+	public abstract double aplicarRegla(double precioNoche, LocalDate from, LocalDate to,double precioTotal);
+}

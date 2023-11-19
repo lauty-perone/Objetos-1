@@ -1,0 +1,139 @@
+<mxfile host="Electron" modified="2023-06-27T22:46:01.230Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.5.0 Chrome/112.0.5615.204 Electron/24.5.1 Safari/537.36" etag="3gMr8-fd4G5ADdDYnViw" version="21.5.0" type="device">
+  <diagram name="Página-1" id="TAEDui374v7Xf8vFjKVU">
+    <mxGraphModel dx="942" dy="601" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="JPfrjdvWEwGIGwzWvdsO-1" value="Sistema" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="90" y="40" width="470" height="174" as="geometry" />
+        </mxCell>
+        <mxCell id="JPfrjdvWEwGIGwzWvdsO-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="JPfrjdvWEwGIGwzWvdsO-1" vertex="1">
+          <mxGeometry y="26" width="470" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="JPfrjdvWEwGIGwzWvdsO-4" value="+ crearUusario(dni: String): Usuario&lt;br&gt;+ registrarPropiedad(usuario: Usuario, precioPorNoche: Real, nombre: String, ubicacion: String): Propiedad&lt;br&gt;+ crearReserva(inquilino: Usuario, propiedad: Propiedad, inicio: Date, fin: Date ): Reserva&lt;br&gt;+ crearReglaPorRangoFechas(propiedad: Propiedad, rango: DateLapse, esAumento: Boolean, porcentaje: Integer): ReglaRangoFechas&lt;br&gt;+ crearReglaPorEstanciaProlongada (propiedad: Propiedad, porcentaje: Integer, cantidadMinimaDias: Integer): ReglaEstanciaProlongada" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="JPfrjdvWEwGIGwzWvdsO-1" vertex="1">
+          <mxGeometry y="34" width="470" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="JPfrjdvWEwGIGwzWvdsO-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="JPfrjdvWEwGIGwzWvdsO-5" target="JPfrjdvWEwGIGwzWvdsO-11" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JPfrjdvWEwGIGwzWvdsO-5" value="Usuario" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="800" y="84" width="250" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="JPfrjdvWEwGIGwzWvdsO-6" value="- dni: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="JPfrjdvWEwGIGwzWvdsO-5" vertex="1">
+          <mxGeometry y="26" width="250" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="JPfrjdvWEwGIGwzWvdsO-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="JPfrjdvWEwGIGwzWvdsO-5" vertex="1">
+          <mxGeometry y="52" width="250" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="JPfrjdvWEwGIGwzWvdsO-8" value="+ &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Usuario(dni: String): Usuario&lt;br&gt;+ registrarPropiedad(precioPorNoche: Real, nombre:String, ubicacion: String): Propiedad" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="JPfrjdvWEwGIGwzWvdsO-5" vertex="1">
+          <mxGeometry y="60" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JPfrjdvWEwGIGwzWvdsO-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="JPfrjdvWEwGIGwzWvdsO-4" target="JPfrjdvWEwGIGwzWvdsO-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JPfrjdvWEwGIGwzWvdsO-10" value="0..*&lt;br&gt;- usuarios" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="630" y="107" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="JPfrjdvWEwGIGwzWvdsO-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="JPfrjdvWEwGIGwzWvdsO-11" target="JPfrjdvWEwGIGwzWvdsO-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JPfrjdvWEwGIGwzWvdsO-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="JPfrjdvWEwGIGwzWvdsO-11" target="JPfrjdvWEwGIGwzWvdsO-23" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JPfrjdvWEwGIGwzWvdsO-11" value="Propiedad" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="650" y="410" width="550" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="JPfrjdvWEwGIGwzWvdsO-12" value="- precioPorNoche: Real&lt;br&gt;- nombre: String&lt;br&gt;- ubicacion: String&lt;br&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="JPfrjdvWEwGIGwzWvdsO-11" vertex="1">
+          <mxGeometry y="26" width="550" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="JPfrjdvWEwGIGwzWvdsO-13" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="JPfrjdvWEwGIGwzWvdsO-11" vertex="1">
+          <mxGeometry y="80" width="550" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="JPfrjdvWEwGIGwzWvdsO-14" value="+ &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Propiedad(precioPorNoche: Real, nombre:String, ubicacion: String): Propiedad&lt;br&gt;+ crearReserva(inquilino: Usuario, inicio: Date, fin : Date)&lt;br&gt;+ calcularPrecioBase(fecha: DateLapse): Real&lt;br&gt;+ estaDisponible(fecha: DateLapse): Boolean&lt;br&gt;+ agregarRegla (porcentaje: Integer, cantidadMinimaDias: Integer): ReglaEstanciaProlongada&lt;br&gt;+&amp;nbsp;agregarRegla (rango: DateLapse, esAumento: Boolean, porcentaje: Integer):&amp;nbsp;ReglaRangoFechas" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="JPfrjdvWEwGIGwzWvdsO-11" vertex="1">
+          <mxGeometry y="88" width="550" height="102" as="geometry" />
+        </mxCell>
+        <mxCell id="JPfrjdvWEwGIGwzWvdsO-16" value="0..*&lt;br&gt;- propiedades" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="827" y="243" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="JPfrjdvWEwGIGwzWvdsO-44" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="JPfrjdvWEwGIGwzWvdsO-17" target="JPfrjdvWEwGIGwzWvdsO-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JPfrjdvWEwGIGwzWvdsO-17" value="Reserva" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="120" y="435" width="320" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="JPfrjdvWEwGIGwzWvdsO-18" value="- dateLapse: DateLapse&lt;br&gt;- precioFinal: Real" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="JPfrjdvWEwGIGwzWvdsO-17" vertex="1">
+          <mxGeometry y="26" width="320" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="JPfrjdvWEwGIGwzWvdsO-19" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="JPfrjdvWEwGIGwzWvdsO-17" vertex="1">
+          <mxGeometry y="70" width="320" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="JPfrjdvWEwGIGwzWvdsO-20" value="+ &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Reserva(fechaInicio: Date,fechaFin: Date, precioFinal: Real, inquilino: Usuario): Reserva&lt;br&gt;+ estaOcupada(dateLapse: DateLapse): Boolean&lt;br&gt;+ getPrecioFinal(): Real" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="JPfrjdvWEwGIGwzWvdsO-17" vertex="1">
+          <mxGeometry y="78" width="320" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="JPfrjdvWEwGIGwzWvdsO-22" value="0..*&lt;br&gt;- reservas" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="490" y="463" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="JPfrjdvWEwGIGwzWvdsO-23" value="&amp;lt;&amp;lt;abstract&amp;gt;&amp;gt;&lt;br&gt;Regla" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="760" y="730" width="330" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="JPfrjdvWEwGIGwzWvdsO-24" value="- porcentaje: Integer&lt;br&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="JPfrjdvWEwGIGwzWvdsO-23" vertex="1">
+          <mxGeometry y="40" width="330" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="JPfrjdvWEwGIGwzWvdsO-25" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="JPfrjdvWEwGIGwzWvdsO-23" vertex="1">
+          <mxGeometry y="66" width="330" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="JPfrjdvWEwGIGwzWvdsO-26" value="+ esUnica(): Boolean&lt;br&gt;+ &amp;lt;&amp;lt;abstract&amp;gt;&amp;gt; aplicarRegla(fecha: DateLapse, precioFinal: Real, precioNocheReal: Real): Real&lt;br&gt;+ &amp;lt;&amp;lt;abstract&amp;gt;&amp;gt; prioridad(): Integer" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="JPfrjdvWEwGIGwzWvdsO-23" vertex="1">
+          <mxGeometry y="74" width="330" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="JPfrjdvWEwGIGwzWvdsO-28" value="0..*&lt;br&gt;- reglas" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="920" y="660" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="JPfrjdvWEwGIGwzWvdsO-33" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;" parent="1" source="JPfrjdvWEwGIGwzWvdsO-29" target="JPfrjdvWEwGIGwzWvdsO-23" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JPfrjdvWEwGIGwzWvdsO-29" value="ReglaEstanciaProlongada" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="367" y="1029" width="460" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="JPfrjdvWEwGIGwzWvdsO-30" value="- cantidadMinimaDias: Integer" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="JPfrjdvWEwGIGwzWvdsO-29" vertex="1">
+          <mxGeometry y="26" width="460" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="JPfrjdvWEwGIGwzWvdsO-31" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="JPfrjdvWEwGIGwzWvdsO-29" vertex="1">
+          <mxGeometry y="52" width="460" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="JPfrjdvWEwGIGwzWvdsO-32" value="+ &amp;lt;&amp;lt;create&amp;gt;&amp;gt; ReglaEstanciaProlongada(porcentaje: Integer, cantidadMinimaDias: Integer):&amp;nbsp;ReglaEstanciaProlongada&lt;br&gt;+ prioridad(): Integre&lt;br&gt;+ esUnica(): Boolean&lt;br&gt;+ aplicarRegla(fecha: DateLapse, precioTotal: Real, precioNocheReal: Real): Real" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="JPfrjdvWEwGIGwzWvdsO-29" vertex="1">
+          <mxGeometry y="60" width="460" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="JPfrjdvWEwGIGwzWvdsO-38" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;" parent="1" source="JPfrjdvWEwGIGwzWvdsO-34" target="JPfrjdvWEwGIGwzWvdsO-23" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JPfrjdvWEwGIGwzWvdsO-34" value="ReglaRangoFechas" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1000" y="1029" width="450" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="JPfrjdvWEwGIGwzWvdsO-35" value="- rango: DateLapse&lt;br&gt;- esAumento: Boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="JPfrjdvWEwGIGwzWvdsO-34" vertex="1">
+          <mxGeometry y="26" width="450" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="JPfrjdvWEwGIGwzWvdsO-36" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="JPfrjdvWEwGIGwzWvdsO-34" vertex="1">
+          <mxGeometry y="60" width="450" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="JPfrjdvWEwGIGwzWvdsO-37" value="+ &amp;lt;&amp;lt;create&amp;gt;&amp;gt;&amp;nbsp;ReglaRangoFechas(rango:DateLapse, esAumento: Boolean, porcentaje: Integer):&amp;nbsp;ReglaRangoFechas&lt;br&gt;+ prioridad():Integer&lt;br&gt;+ aplicarRegla(fecha:DateLapse, precioTotal:Real, precioNocheReal: Real): Real" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="JPfrjdvWEwGIGwzWvdsO-34" vertex="1">
+          <mxGeometry y="68" width="450" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="JPfrjdvWEwGIGwzWvdsO-39" value="DateLapse" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="120" y="720" width="330" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="JPfrjdvWEwGIGwzWvdsO-40" value="- from: Date&lt;br&gt;- to: Date" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="JPfrjdvWEwGIGwzWvdsO-39" vertex="1">
+          <mxGeometry y="26" width="330" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="JPfrjdvWEwGIGwzWvdsO-41" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="JPfrjdvWEwGIGwzWvdsO-39" vertex="1">
+          <mxGeometry y="60" width="330" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="JPfrjdvWEwGIGwzWvdsO-42" value="+ &amp;lt;&amp;lt;create&amp;gt;&amp;gt; DateLapse(from: Date, to: Date): DateLapse&lt;br&gt;+ sizeInDays(): Integer&lt;br&gt;+ overlaps (from: Date, to: Date): Boolean&lt;br&gt;+ overlaps(dateLapse: DateLapse): Boolean&lt;br&gt;+ includesDate(other: Date): Boolean&lt;br&gt;+&amp;nbsp;daysThatOverlaps (dateLapse: DateLapse): Integer&lt;br&gt;+ sizeInDays(from: Date, to: Date): Integer" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="JPfrjdvWEwGIGwzWvdsO-39" vertex="1">
+          <mxGeometry y="68" width="330" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="JPfrjdvWEwGIGwzWvdsO-45" value="1&lt;br&gt;- inquilino" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="525" y="293" width="70" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

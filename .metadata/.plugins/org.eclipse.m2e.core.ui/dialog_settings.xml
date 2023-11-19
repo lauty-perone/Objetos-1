@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\lauty\Downloads\parcial (1)\parcial\parcial"/>
+			<item value="C:\Users\lauty\Downloads\ejercicio2 (1)"/>
+			<item value="C:\Users\lauty\Downloads\ejercicio1\ejercicio1-wallpost"/>
+			<item value="C:\Users\lauty\Desktop\Escritorio\INFORMATICA\RedictadoOO1\ejercicio2"/>
+			<item value="C:\Users\lauty\Downloads\ejercicio2"/>
+			<item value="C:\Users\lauty\Desktop\Escritorio\INFORMATICA\OO1\ejercicio2"/>
+			<item value="C:\Users\lauty\Downloads\ejercicio1"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\lauty\Desktop\Escritorio\INFORMATICA\RedictadoOO1\Parcial2022"/>
+			<item value="C:\Users\lauty\Desktop\Escritorio\INFORMATICA\RedictadoOO1\Parcial2022Uno"/>
+			<item value="C:\Users\lauty\Desktop\Escritorio\INFORMATICA\RedictadoOO1\ParcialSegundoRecup2022"/>
+			<item value="C:\Users\lauty\Desktop\Escritorio\INFORMATICA\RedictadoOO1\ejercicio14"/>
+			<item value="C:\Users\lauty\Desktop\Escritorio\INFORMATICA\RedictadoOO1\ParcialPagareCheque"/>
+			<item value="C:\Users\lauty\Desktop\Escritorio\INFORMATICA\RedictadoOO1"/>
+			<item value="C:\Users\lauty\Desktop\Escritorio\INFORMATICA\RedictadoOO1\ejercicio6"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="defaultLocal"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="ar.edu.unlp.info.oo1.ParcialPrimer2023"/>
+			<item value="ar.edu.unlp.info.oo1.Parcial2022"/>
+			<item value="ar.edu.unlp.info.oo1.ParcialSegundoRecup2022"/>
+			<item value="ar.edu.unlp.info.oo1.parcialPrimerFecha2023"/>
+			<item value="ar.edu.unlp.info.oo1.ParcialPrimerRecup2022"/>
+			<item value="ar.edu.unlp.info.oo1.ListaDeTareas"/>
+			<item value="ar.edu.unlp.info.oo1.ejercicio18ChatGPT"/>
+			<item value="ar.edu.unlp.info.oo1.Parcial2022Uno"/>
+			<item value="ar.edu.unlp.info.oo1.ParcialPagareCheque"/>
+			<item value="ar.edu.unlp.info.oo1.ejercicio17"/>
+			<item value="ar.edu.unlp.info.oo1.ejercicio14"/>
+			<item value="ar.edu.unlp.info.oo1.ejercicio15"/>
+			<item value="ar.edu.unlp.info.oo1.ejercicio6"/>
+			<item value="ar.edu.unlp.info.oo1.ejercicio4"/>
+			<item value="ar.edu.unlp.info.oo1.ejercicio3"/>
+		</list>
+		<list key="groupId">
+			<item value="ar.edu.unlp.info.oo1"/>
+		</list>
+		<list key="artifactId">
+			<item value="ParcialPrimer2023"/>
+			<item value="Parcial2022"/>
+			<item value="ParcialSegundoRecup2022"/>
+			<item value="parcialPrimerFecha2023"/>
+			<item value="ParcialPrimerRecup2022"/>
+			<item value="ListaDeTareas"/>
+			<item value="ejercicio18ChatGPT"/>
+			<item value="Parcial2022Uno"/>
+			<item value="ParcialPagareCheque"/>
+			<item value="ejercicio17"/>
+			<item value="ejercicio14"/>
+			<item value="ejercicio15"/>
+			<item value="ejercicio6"/>
+			<item value="ejercicio4"/>
+			<item value="ejercicio3"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.wizards.CustomArchetypeDialog">
+		<list key="archetypeGroupId">
+			<item value="ar.edu.unlp.info.oo1"/>
+		</list>
+		<list key="archetypeArtifactId">
+			<item value="objetos-uno"/>
+		</list>
+		<list key="archetypeVersion">
+			<item value="1.0.0"/>
+		</list>
+		<list key="repositoryUrl">
+			<item value="https://github.com/edu-unlp-info-objetos/oo1/blob/main/objetos-uno-archetype/objetos-uno-archetype-1.0.0.jar?raw=true"/>
+		</list>
+	</section>
+</section>

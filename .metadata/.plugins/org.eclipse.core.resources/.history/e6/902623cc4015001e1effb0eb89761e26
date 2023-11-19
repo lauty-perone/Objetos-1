@@ -1,0 +1,33 @@
+package ar.edu.unlp.info.oo1.ParcialPrimer2023;
+
+import java.time.LocalDate;
+
+public class RangoFechas extends Regla{
+	
+	private DateLapse rango;
+	private boolean aumenta;
+	
+	public RangoFechas(int porcentaje, LocalDate from,LocalDate to, boolean aumenta) {
+		super(porcentaje);
+		this.rango = new DateLapse(from, to);
+		this.aumenta = aumenta;
+	}
+	
+	public int prioridad() {
+		return 1;
+	}
+	
+	public double aplicarRegla(double precioNoche, LocalDate from, LocalDate to,double precioTotal) {
+		DateLapse rangoReserva = new DateLapse(from, to);
+		double porcentaje = 0;
+		if (this.aumenta)
+			porcentaje = 1 + super.getPorcentaje();
+		else
+			porcentaje = - super.getPorcentaje();
+		return (precioTotal - rangoReserva.daysThatOverlaps(rangoReserva) * precioNoche) + 
+				rangoReserva.daysThatOverlaps(rangoReserva) * precioNoche * porcentaje;
+			
+	}
+	
+	
+}

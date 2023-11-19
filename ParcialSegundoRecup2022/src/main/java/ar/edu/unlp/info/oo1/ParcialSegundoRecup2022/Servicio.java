@@ -1,0 +1,35 @@
+package ar.edu.unlp.info.oo1.ParcialSegundoRecup2022;
+
+public abstract class Servicio {
+	
+	private double precioHora;
+	private int cantHoras;
+	
+	public Servicio(double precioHora, int cantHoras) {
+		this.precioHora = precioHora;
+		this.cantHoras = cantHoras;
+	}
+
+	public double getPrecioHora() {
+		return precioHora;
+	}
+
+	public void setPrecioHora(double precioHora) {
+		this.precioHora = precioHora;
+	}
+
+	public int getCantHoras() {
+		return cantHoras;
+	}
+
+	public void setCantHoras(int cantHoras) {
+		this.cantHoras = cantHoras;
+	}
+	
+	public double monto() {
+		return this.precioHora * this.cantHoras;
+	}
+	public abstract double calcularMontoAbonar();
+	
+	
+}

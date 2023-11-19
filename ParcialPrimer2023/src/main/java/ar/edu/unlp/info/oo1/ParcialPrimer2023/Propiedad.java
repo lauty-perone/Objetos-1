@@ -1,0 +1,109 @@
+package ar.edu.unlp.info.oo1.ParcialPrimer2023;
+
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Propiedad {
+	
+	private double precioNoche;
+	private String nombre;
+	private String direccion;
+	private List<Regla> reglas;
+	private List<Reserva> reservas;
+	
+	public Propiedad(double precioNoche, String nombre, String direccion) {
+		this.precioNoche = precioNoche;
+		this.nombre = nombre;
+		this.direccion = direccion;
+		this.reglas = new ArrayList<Regla>();
+		this.reservas = new ArrayList<Reserva>();
+	}
+	
+	public double getPrecioNoche() {
+		return precioNoche;
+	}
+
+
+	public void setPrecioNoche(double precioNoche) {
+		this.precioNoche = precioNoche;
+	}
+
+
+	public String getNombre() {
+		return nombre;
+	}
+
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+
+	public String getDireccion() {
+		return direccion;
+	}
+
+
+	public void setDireccion(String direccion) {
+		this.direccion = direccion;
+	}
+
+
+	public List<Regla> getReglas() {
+		return reglas;
+	}
+
+
+	public void setReglas(List<Regla> reglas) {
+		this.reglas = reglas;
+	}
+
+
+	public List<Reserva> getReservas() {
+		return reservas;
+	}
+
+
+	public void setReservas(List<Reserva> reservas) {
+		this.reservas = reservas;
+	}
+
+
+	public RangoFechas agregarReglaRango(int porcentaje, LocalDate from, LocalDate to, boolean aumeneta) {
+		RangoFechas regla = new RangoFechas(porcentaje, from, to, aumeneta);
+		this.reglas.add(regla);
+		return regla;
+	}
+	
+	public EstanciaProlongada agregarReglaEstancia(int porcentaje, int cantMinimaDias) {
+		EstanciaProlongada regla = new EstanciaProlongada(porcentaje, cantMinimaDias);
+		if (this.reglas.stream().noneMatch(r ->r.esUnica())){
+			this.reglas.add(regla);
+			return regla;
+		}
+		return null;
+	}
+	
+	public double precioBase(int cantDias) {
+		return cantDias * this.precioNoche;
+	}
+	
+	private boolean disponible(LocalDate from, LocalDate to) {
+		return this.reservas.stream().anyMatch(r -> r.disponible(from, to));
+	}
+	
+	public Reserva crearReserva(Usuario inquilino, LocalDate from, LocalDate to) {
+		DateLapse rango = new DateLapse(from, to);
+		if (!this.disponible(from, to)) {
+			this.reglas.stream().sorted((r1,r2)-> r1.prioridad() - r2.prioridad());
+			double precioFinal =  this.reglas.stream()
+					.mapToDouble(r -> r.aplicarRegla(precioNoche, from, to, this.precioBase(rango.sizeInDays())))
+					.sum();
+			Reserva r = new Reserva(rango, precioFinal, inquilino);
+			this.reservas.add(r);
+			return r;
+		}
+		return null;
+	}	
+}

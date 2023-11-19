@@ -1,0 +1,48 @@
+package ar.edu.unlp.info.oo1.ParcialPrimer2023;
+
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Propiedad {
+	
+	private double precioNoche;
+	private String nombre;
+	private String direccion;
+	private List<Regla> reglas;
+	private List<Reserva> reservas;
+	
+	public Propiedad(double precioNoche, String nombre, String direccion) {
+		this.precioNoche = precioNoche;
+		this.nombre = nombre;
+		this.direccion = direccion;
+		this.reglas = new ArrayList<Regla>();
+		this.reservas = new ArrayList<Reserva>();
+	}
+	
+	public RangoFechas agregarReglaRango(int porcentaje, LocalDate from, LocalDate to, boolean aumeneta) {
+		RangoFechas regla = new RangoFechas(porcentaje, from, to, aumeneta);
+		this.reglas.add(regla);
+		return regla;
+	}
+	
+	public EstanciaProlongada agregarReglaEstancia(int porcentaje, int cantMinimaDias) {
+		EstanciaProlongada regla = new EstanciaProlongada(porcentaje, cantMinimaDias);
+		if (this.reglas.stream().noneMatch(r ->r.esUnica())){
+			this.reglas.add(regla);
+			return regla;
+		}
+		return null;
+	}
+	
+	public double precioBase(int cantDias) {
+		return cantDias * this.precioNoche;
+	}
+	
+	public boolean disponible(LocalDate from, LocalDate to) {
+		return this.reservas.stream().anyMatch(r -> r.disponible(from, to));
+	}
+	
+	
+	
+}
